@@ -146,6 +146,7 @@
 				TargetAttributes = {
 					E752E4EA1F3BDCD200F74598 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3L34B92962;
 						ProvisioningStyle = Automatic;
 					};
 					E752E4FE1F3BDCD300F74598 = {
@@ -339,6 +340,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3L34B92962;
 				INFOPLIST_FILE = Keyboarder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alan.li.Keyboarder;
@@ -351,6 +354,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3L34B92962;
 				INFOPLIST_FILE = Keyboarder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alan.li.Keyboarder;
