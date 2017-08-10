@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  KeyboardController.swift
 //  Keyboarder
 //
 //  Created by Alan Li on 2017-08-09.
@@ -7,14 +7,9 @@
 //
 
 import UIKit
-import AudioKit
 
-class ViewController: UIViewController {
+class KeyboardController: UIViewController {
 
-    @IBOutlet weak var leftHandKeyboard: AKKeyboardView!
-    @IBOutlet weak var rightHandKeyboard: AKKeyboardView!
- 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

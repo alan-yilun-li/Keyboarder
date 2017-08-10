@@ -1,26 +1,66 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9nh-mn-RhY">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Lrj-xn-Cfk">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9nh-mn-RhY" customClass="ViewController" customModule="Keyboarder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="aeH-Mb-pGc"/>
+                        <viewControllerLayoutGuide type="bottom" id="iVm-Hx-RxN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="hCt-GU-k7q">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Qo3-wg-whu">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iI5-Gg-l7j" customClass="AKKeyboardView" customModule="AudioKit">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="187.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-23-0BQ" customClass="AKKeyboardView" customModule="AudioKit">
+                                        <rect key="frame" x="0.0" y="187.5" width="667" height="187.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iI5-Gg-l7j" firstAttribute="leading" secondItem="Qo3-wg-whu" secondAttribute="leading" id="GQu-1W-UeO"/>
+                                    <constraint firstItem="cLf-23-0BQ" firstAttribute="leading" secondItem="Qo3-wg-whu" secondAttribute="leading" id="JqO-6G-KZ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="cLf-23-0BQ" secondAttribute="bottom" id="WTU-iS-2Ub"/>
+                                    <constraint firstItem="iI5-Gg-l7j" firstAttribute="top" secondItem="Qo3-wg-whu" secondAttribute="top" id="Z3A-X1-ogr"/>
+                                    <constraint firstItem="cLf-23-0BQ" firstAttribute="height" secondItem="iI5-Gg-l7j" secondAttribute="height" id="eZO-pA-a1N"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLf-23-0BQ" secondAttribute="trailing" id="hpB-5d-nAB"/>
+                                    <constraint firstAttribute="trailing" secondItem="iI5-Gg-l7j" secondAttribute="trailing" id="okm-Nw-3QE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qo3-wg-whu" firstAttribute="leading" secondItem="hCt-GU-k7q" secondAttribute="leading" id="8hx-QB-pA0"/>
+                            <constraint firstItem="iVm-Hx-RxN" firstAttribute="top" secondItem="Qo3-wg-whu" secondAttribute="bottom" id="opP-Nw-glp"/>
+                            <constraint firstAttribute="trailing" secondItem="Qo3-wg-whu" secondAttribute="trailing" id="rhX-34-sVl"/>
+                            <constraint firstItem="Qo3-wg-whu" firstAttribute="top" secondItem="aeH-Mb-pGc" secondAttribute="bottom" id="uGg-AU-hCv"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="leftHandKeyboard" destination="iI5-Gg-l7j" id="1ka-FI-bbD"/>
+                        <outlet property="rightHandKeyboard" destination="cLf-23-0BQ" id="Cw4-4v-yVt"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7X-qj-Szm" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

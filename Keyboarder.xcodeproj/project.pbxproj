@@ -475,10 +475,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EAEF6EC5578446FDD944EDF /* Pods-Keyboarder.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3L34B92962;
 				INFOPLIST_FILE = Keyboarder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alan.li.Keyboarder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,10 +492,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32B124638ED61FB4EDC9F883 /* Pods-Keyboarder.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3L34B92962;
 				INFOPLIST_FILE = Keyboarder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alan.li.Keyboarder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +554,7 @@
 				E752E50A1F3BDCD300F74598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E752E50B1F3BDCD300F74598 /* Build configuration list for PBXNativeTarget "KeyboarderTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +563,7 @@
 				E752E50D1F3BDCD300F74598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
